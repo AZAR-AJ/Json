@@ -1,0 +1,50 @@
+{
+	"QF_NNMi_Update_IDs":	{
+        "status":"abc",
+        "successPopulationJob": 1,
+        "errorPopulationJob": 0,
+        "warningPopulationJob": 0,
+        "totalPopulationJob": 1,
+        "successPushJob": 0,
+        "errorPushJob": 0,
+        "warningPushJob": 0,
+        "totalPushJob": 0,
+        "allFederationSelectedCITs": 0,
+        "federationSelectedCIT": null,
+        "dataPopulationJobs": [
+            {
+                "dataStoreID": "QF NNMi-Update-IDs",
+                "displayID": "Update Node IDs in NNMi",
+                "realID": "QF NNMi-Update-IDs_Update Node IDs in NNMi",
+                "deleteAllowedInJob": null,
+                "jobEndTime": 1619387804885,
+                "jobStartTime": 1619387718824,
+                "jobStatistics": {
+                    "jobStatus": "SUCCESSFULL",
+                    "addedCIs": 0,
+                    "updatedCIs": 0,
+                    "removedCIs": 0,
+                    "failedCIs": 0,
+                    "totalCIs": 0,
+                    "citStats": null,
+                    "errorsPerQuery": {},
+                    "initFailed": false,
+                    "errorMsg": "",
+                    "queryStatus": {},
+                    "errorData": null,
+                    "errorDescriptions": []
+                },
+                "querys": [],
+                "changed": false,
+                "new": false
+            }
+        ],
+        "dataPushJobs": [],
+        "operationPushBlackItem": false,
+        "name": "QF NNMi-Update-IDs",
+        "adapterName": "NNM_Update_Ids",
+        "description": null,
+        "enabled": true
+	
+	}
+}
