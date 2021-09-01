@@ -12,16 +12,13 @@ namespace TestApp
         static void Main(string[] args)
         {
             var JsonFileContent = File.ReadAllText(@"C:\Training\Trainig API\23-02(more data json to csv)\UMCDB_json\test.json");
-            Console.WriteLine("A");
-            var Tasklist = JsonConvert.DeserializeObject<Root>(JsonFileContent);
-            Console.WriteLine("B");
-            foreach ( var task in Tasklist.QF_NNMi_Update_IDs)
-            {
-                Console.WriteLine(task.status);
-            }
+            var myDeserializedClass = JsonConvert.DeserializeObject<Root>(JsonFileContent);
+            Console.WriteLine(myDeserializedClass.QF_NNMi_Update_IDs.status);
+          
         }
     }
-    public class QFNNMiUpdateID
+    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
+    public class QFNNMiUpdateIDs
     {
         public string status { get; set; }
         public int successPopulationJob { get; set; }
@@ -29,8 +26,9 @@ namespace TestApp
 
     public class Root
     {
-        public List<QFNNMiUpdateID> QF_NNMi_Update_IDs { get; set; }
+        public QFNNMiUpdateIDs QF_NNMi_Update_IDs { get; set; }
     }
+
 
 
 }
